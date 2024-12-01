@@ -121,9 +121,8 @@ if uploaded_file:
             label = f"{row['name']} {row['confidence']:.2f}"
             cv2.rectangle(image_bgr, (x1, y1), (x2, y2), (0, 255, 0), 2)  # Box thickness is 2
         
-        # Adjust font properties for less bold labels
-            font_scale = 0.5  # Reduce the font size
-            font_thickness = 1  # Reduce the font thickness
+            font_scale = 0.5  
+            font_thickness = 1  
             text_color = (255, 0, 0)  # Text color (blue)
         
         # Draw the label with adjusted properties
