@@ -36,7 +36,7 @@ if uploaded_file:
         # Draw bounding box
         cv2.rectangle(image_bgr, (x1, y1), (x2, y2), (0, 255, 0), 2)  # Box thickness is 2
         
-        # Adjust font properties for less bold labels
+
         font_scale = 0.5  # Reduce the font size
         font_thickness = 1  # Reduce the font thickness
         text_color = (255, 0, 0)  # Text color (blue)
@@ -67,7 +67,7 @@ if uploaded_file:
     # Generate task guidance based on detected objects and text
     def generate_task_guidance(objects):
         """Generates personalized guidance based on detected objects and text."""
-        genai.configure(api_key='AIzaSyDHdZMngWXmsJGb3uO2-ZWVER4HlM6MTsY') # Replace with your actual Gemini API key
+        genai.configure(api_key='Your_key') # Replace with your actual Gemini API key
         model = genai.GenerativeModel(model_name="models/gemini-1.5-flash")
 
         prompt = (
