@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw
 import pytesseract
 import pyttsx3
 
-genai.configure(api_key="AIzaSyCiNjOZjv1BWabI5QcLit6zVaoExABxbDY")
+genai.configure(api_key="Your_key")
 
 # Initialize Google Generative AI
 model = genai.GenerativeModel("gemini-1.5-pro")
